@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  line-height: 1.9;
+  background: #70e1f5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffd194,
+    #70e1f5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ffd194,
+    #70e1f5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+
+header {
+  /* position: sticky; */
+  text-align: center;
+  background-image: url(./images/footprint-1084885_1280.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+
+  padding: 0;
+}
+
+nav ul li a {
+  color: rgb(23, 138, 184);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.animalandbirds-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  /* background-color:ghostwhite; */
+}
+.animalandbirds-grid div {
+  text-align: center;
+}
+
+.animalandbirds-grid div p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+.animal-name {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#extinct h2 {
+  text-align: center;
+}
+#extinct h2 a {
+  text-decoration: none;
+  color: rgb(67, 212, 67);
+}
+
+#endangered h2 {
+  text-align: center;
+}
+#endangered h2 a {
+  text-decoration: none;
+  color: green;
+}
+
+#actions h2 {
+  text-align: center;
+  color: rgb(230, 126, 9);
+  font-weight: bolder;
+}
+.species-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  /* gap: 10px; */
+}
+
+.species-grid div {
+  text-align: center;
+}
+.species-grid div p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#resources {
+  text-align: center;
+}
+
+#resources h3 {
+  color: orange;
+  font-size: 2rem;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Large screens (desktops and laptops) */
+@media screen and (min-width: 1024px) {
+  /* Add adjustments as needed for large screens */
+}
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .animalandbirds-grid {
+    /* Adjust layout for smaller grid */
+  }
+
+  nav ul li a {
+    font-size: 20px; /* Smaller navigation on tablets */
+  }
+}
+
+/* Small screens (phones) */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 36px; /* Smaller header text for phones */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+  }
+
+  .animalandbirds-grid {
+    flex-direction: column; /* Images in a single column */
+  }
+
+  img {
+    width: 100%; /* Images take up full width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+  }
+}
